@@ -60,3 +60,7 @@
   background-color: #4361ee !important;
   color: azure !important;
 }
+
+.containerDetail{
+  display: flex;
+}
