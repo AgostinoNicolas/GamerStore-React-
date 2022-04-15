@@ -1,6 +1,6 @@
 import ItemCount from "./ItemCount";
 
-const Item = ({img, nombre, procesador, memoria , almacenamiento, pantalla, precio}) => {
+const Item = ({img, nombre, procesador, memoria , almacenamiento, pantalla, precio, stock}) => {
     return(
         <div className="productsContainer">
             <div className="containerProductsImg">
@@ -12,7 +12,8 @@ const Item = ({img, nombre, procesador, memoria , almacenamiento, pantalla, prec
                 <p>Memoria: {memoria}</p>
                 <p>Almacenamiento: {almacenamiento}</p>
                 <p>Pantalla: {pantalla}</p>
-                <p>Precio: ${precio}</p>        
+                <p>Precio: ${precio}</p>
+                <p className="stock">Stock: {stock}</p>        
             </div>
             <ItemCount />
         </div>
