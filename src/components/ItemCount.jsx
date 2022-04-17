@@ -3,11 +3,12 @@ import { Button } from "@material-ui/core";
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 
-const ItemCount = () =>{
+
+const ItemCount = ( {stock} ) =>{
     const[rate, setRate] = useState(0);
 
     const increment = () =>{
-        if (rate < 5) {
+        if (rate < stock) {
             setRate(rate+1);    
         }
         

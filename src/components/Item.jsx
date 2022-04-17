@@ -15,7 +15,7 @@ const Item = ({img, nombre, procesador, memoria , almacenamiento, pantalla, prec
                 <p>Precio: ${precio}</p>
                 <p className="stock">Stock: {stock}</p>        
             </div>
-            <ItemCount />
+            <ItemCount stock={stock} />
         </div>
     );
 
