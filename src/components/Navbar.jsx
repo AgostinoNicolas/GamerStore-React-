@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Container,Nav,} from 'react-bootstrap';
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () =>{
@@ -8,14 +9,17 @@ const NavBar = () =>{
         <header>
             <Navbar className='bg-nav' expand="lg">
                 <Container>
-                    <Navbar.Brand className='logo' href="#home">Gamer Store</Navbar.Brand>
+                    <Navbar.Brand className='logo'><Link className='linkNavLogo' to='/'>Gamer Store
+                    </Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">            
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Categoría 1</Nav.Link>
-                        <Nav.Link href="#link">Categoría 2</Nav.Link>
-                        <Nav.Link href="#link">Categoría 3</Nav.Link>
-                        <Nav.Link href="#link">Categoría 4</Nav.Link>
+                         <Nav.Link><Link className='linkNav' to='/'>Productos
+                        </Link></Nav.Link>
+                        <Nav.Link><Link className='linkNav' to='categoria/1'>Notebook
+                        </Link></Nav.Link>
+                        <Nav.Link><Link className='linkNav' to='categoria/2'>Mouse
+                        </Link></Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                     <CartWidget />

@@ -1,6 +1,8 @@
 import ItemCount from "./ItemCount";
+import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
-const Item = ({img, nombre, procesador, memoria , almacenamiento, pantalla, precio, stock}) => {
+const Item = ({id, img, nombre, procesador, memoria , almacenamiento, pantalla, precio, stock }) => {
     return(
         <div className="productsContainer">
             <div className="containerProductsImg">
@@ -15,7 +17,14 @@ const Item = ({img, nombre, procesador, memoria , almacenamiento, pantalla, prec
                 <p>Precio: ${precio}</p>
                 <p className="stock">Stock: {stock}</p>        
             </div>
-            <ItemCount stock={stock} />
+            <div className="productsBtnContainer">
+                <div className="btnDetailContainer">
+                    <Button className="btnDetail" variant="outlined" color="primary">
+                        <Link className="btnDetailLink" to={`/item/${id}`}>DETAIL</Link>
+                    </Button>
+                </div>      
+                <ItemCount stock={stock} />
+            </div>        
         </div>
     );
 
