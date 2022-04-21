@@ -4,7 +4,7 @@ import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 
 
-const ItemCount = ( {stock} ) =>{
+const ItemCount = ( {stock = 0, initial = 1, onAdd} ) =>{
     const[rate, setRate] = useState(0);
 
     const increment = () =>{
@@ -15,34 +15,24 @@ const ItemCount = ( {stock} ) =>{
     }
 
     const decrement = () =>{
-        if (rate > 0) {
+        if (rate > initial) {
             setRate(rate-1)
             
         }  
     }
 
-    const addToCart = () =>{
-        if (rate > 0) {
-            alert("Se agrego al carrito")           
-        }else{
-            alert("No hay stock")
-        }
-    }
-
     return(
         <div className="productsBtn">
-                <Button onClick={increment}>
-                    <AddIcon/>
-                </Button>
-                <div className="count">
-                    <p>{rate}</p>
-                </div>
-                <Button onClick={decrement}>
-                    <RemoveIcon />
-                </Button>
-                <Button onClick={addToCart} className="btnAddToCart" variant="outlined" color="primary">
-                    ADD TO CART
-                </Button>
+            <Button onClick={increment}>
+                <AddIcon/>
+            </Button>
+            <div className="count">
+                <p>{rate}</p>
+            </div>
+            <Button onClick={decrement}>
+                <RemoveIcon />
+            </Button>
+            <Button onClick={()=> onAdd(rate)} className="btnAddToCart" variant="outlined" color="primary">ADD TO CART</Button>
         </div> 
     );
 }

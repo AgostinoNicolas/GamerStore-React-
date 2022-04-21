@@ -22,8 +22,8 @@ const Item = ({id, img, nombre, procesador, memoria , almacenamiento, pantalla, 
                     <Button className="btnDetail" variant="outlined" color="primary">
                         <Link className="btnDetailLink" to={`/item/${id}`}>DETAIL</Link>
                     </Button>
-                </div>      
-                <ItemCount stock={stock} />
+                </div>
+                <ItemCount stock={stock} />      
             </div>        
         </div>
     );
