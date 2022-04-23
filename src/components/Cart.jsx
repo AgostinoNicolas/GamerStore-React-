@@ -3,7 +3,7 @@ const Cart = () =>{
         <>
             <p>Estas en Cart 🛒</p>
         </>
-    )
+    );
 }
 
 export default Cart;

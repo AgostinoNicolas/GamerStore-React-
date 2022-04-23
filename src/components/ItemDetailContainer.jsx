@@ -16,7 +16,7 @@ const ItemDetailContainer = () => {
         .catch(err => console.log(err))
 
         console.log(idItem)
-     }, []);
+     }, [idItem]);
 
     return(
         <ItemDetail items={datos} />

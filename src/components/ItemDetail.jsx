@@ -1,9 +1,9 @@
-import { useEffect } from "react";
+import { useState } from "react";
 import ItemCount from "./ItemCount";
-import { Button } from "bootstrap";
+import Checkout from "./Checkout";
 
 const ItemDetail = ({items}) => {
-    const [itemCount, setItemCount] = useEffect(0);
+    const [itemCount, setItemCount] = useState(0);
 
     const onAdd = (qty) => {
         alert("Has seleccionado " + qty + " articulos");
@@ -28,7 +28,7 @@ const ItemDetail = ({items}) => {
                 </div>
                 <div className="itemCountDetail">
                     {
-                        itemCount === 0 ? <ItemCount stock={items.stock} initial={itemCount} onAdd={onAdd} /> :  <Button className="btnCheckout" variant="outlined" color="primary">Checkout</Button>
+                        itemCount === 0 ? <ItemCount stock={items.stock} initial={itemCount} onAdd={onAdd} /> : <Checkout />
                     }
                 </div>
             </div>
