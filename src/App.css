@@ -105,6 +105,12 @@
   color: azure !important;
 }
 
+.btnAddToCart:hover{
+  background-color: #3b53c0 !important;
+  border: #3b53c0 !important;
+
+}
+
 
 /* BTN DETAIL */
 .btnDetailContainer{
@@ -117,11 +123,16 @@
   border: #9c27b0 !important;
   margin-bottom: 20px !important;
   width: 130px;
+  color: azure !important;
 }
 
-.btnDetail .btnDetailLink{
+.btnDetail:hover{
+  background-color: #882599 !important;
+  border: #882599 !important;
+}
+
+.btnDetailLink{
   text-decoration: none;
-  color: azure !important;
   font-size: 0.875rem !important;
 }
 
@@ -131,6 +142,11 @@
   background-color: #ff006e !important;
   border: #ff006e !important;
   color: azure !important;
+}
+
+.btnCheckout:hover{
+  background-color: #d1015b !important;
+  border: #d1015b !important;
 }
 
 .btnCheckoutLink{
