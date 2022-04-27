@@ -1,13 +1,17 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import ItemCount from "./ItemCount";
 import Checkout from "./Checkout";
+import { CartContext } from "./CartContext";
 
-const ItemDetail = ({items}) => {
+const ItemDetail = ({ items }) => {
     const [itemCount, setItemCount] = useState(0);
+    const test = useContext(CartContext);
+ 
 
     const onAdd = (qty) => {
         alert("Has seleccionado " + qty + " articulos");
         setItemCount(qty);
+        test.addToCart(items);
     }
 
     return(

@@ -4,9 +4,10 @@ import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 
 
+
 const ItemCount = ( {stock = 0, initial = 1, onAdd} ) =>{
     const[rate, setRate] = useState(0);
-
+    
     const increment = () =>{
         if (rate < stock) {
             setRate(rate+1);    
