@@ -33,7 +33,7 @@ const ItemCount = ( {stock = 0, initial = 1, onAdd} ) =>{
             <Button onClick={decrement}>
                 <RemoveIcon />
             </Button>
-            <Button onClick={()=> onAdd(rate)} className="btnAddToCart" variant="outlined" color="primary">ADD TO CART</Button>
+            <Button onClick={()=> onAdd(rate)} className="btnAddToCart" color="primary">Agregar al Carrito</Button>
         </div> 
     );
 }

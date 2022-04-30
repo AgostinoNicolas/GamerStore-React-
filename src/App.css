@@ -103,12 +103,13 @@
 .btnAddToCart{
   background-color: #4361ee !important;
   color: azure !important;
+  font-size: 0.675rem !important;
+  width: 160px !important;
 }
 
 .btnAddToCart:hover{
   background-color: #3b53c0 !important;
   border: #3b53c0 !important;
-
 }
 
 
@@ -122,8 +123,9 @@
   background-color: #9c27b0 !important;
   border: #9c27b0 !important;
   margin-bottom: 20px !important;
-  width: 130px;
   color: azure !important;
+  font-size: 0.675rem !important;
+  width: 160px !important;
 }
 
 .btnDetail:hover{
@@ -133,7 +135,6 @@
 
 .btnDetailLink{
   text-decoration: none;
-  font-size: 0.875rem !important;
 }
 
 
@@ -172,12 +173,10 @@
   width: 40%;
 }
 
-
 .productsImgDetail{
   width: 60%;
   height: 400px;
 }
-
 
 .containerDetail{
   display: flex;
@@ -187,20 +186,93 @@
   padding: 10px;
 }
 
-
 .productsDescriptionDetail{
   width: 500px;
 }
-
 
 .itemCountDetail{
   display: flex;
 }
 
-/* STOCK */
 
+/* STOCK */
 .stock{
   font-size: 12px;
   color: #8f8f8f;
 }
 
+
+/* EMPTY CART */
+.conatinerEmptyCart{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+/* CART */
+.containerTitleCart{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.containerRemoveCart{
+  display: flex;
+  justify-content: right;
+  margin-bottom: 30px;
+}
+
+.containerContinueShop{
+  display: flex;
+  justify-content: left;
+  margin-bottom: 30px;
+
+}
+
+.containerItemCart{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.imgCart{
+  width: 100px;
+  height: 100px;
+}
+
+
+/* BTN CONTINUE SHOPPING */
+.btnContinueShoplLink{
+  text-decoration: none;
+}
+
+.btnContinueShop{
+  background-color: #4361ee !important;
+  color: azure !important;
+  font-size: 0.675rem !important;
+}
+
+.btnContinueShop:hover{
+  background-color: #3b53c0 !important;
+  border: #3b53c0 !important;
+}
+
+/* BTN EMPTY CART */
+.emptyCart{
+  background-color: #4361ee !important;
+  color: azure !important;
+  font-size: 0.675rem !important;
+}
+
+.emptyCart:hover{
+  background-color: #3b53c0 !important;
+  border: #3b53c0 !important;
+}
+
+
+/* BTN DELETE ITEM */
+.btnDeleteItem{
+  font-size: 10px !important;
+}

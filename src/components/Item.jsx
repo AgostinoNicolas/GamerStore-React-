@@ -21,7 +21,7 @@ const Item = ({id, img, nombre, procesador, memoria , almacenamiento, pantalla, 
                 <div className="btnDetailContainer">
                 <Link className="btnDetailLink" to={`/item/${id}`}>
                     <Button className="btnDetail" variant="outlined" color="primary">
-                        DETAIL
+                        Detalle
                     </Button>
                 </Link>
                 </div>

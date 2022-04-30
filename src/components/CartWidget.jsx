@@ -5,7 +5,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 const CartWidget = () =>{
     return(
         <>
-            <Badge className='shop-cart' badgeContent={4} color="error">
+            <Badge  className='shop-cart' badgeContent={4} color="error">
                 <ShoppingCartIcon />
             </Badge>
         </>

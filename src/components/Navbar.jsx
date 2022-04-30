@@ -19,7 +19,7 @@ const NavBar = () =>{
                         <Link className='linkNav' to='categoria/2'>Mouse</Link>
                     </Nav>
                     </Navbar.Collapse>
-                    <CartWidget />
+                    <Link to='cart'><CartWidget /></Link>    
                 </Container>
             </Navbar>
         </header>
