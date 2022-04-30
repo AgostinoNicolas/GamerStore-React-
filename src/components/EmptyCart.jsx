@@ -7,8 +7,8 @@ const EmptyCart = () => {
         <Row>
             <Col className="conatinerEmptyCart">
                 <div>
-                    <h2>¡Hay un carrito que llenar!</h2>
-                    <h3><b>Actualmente no tenés productos en tu carrito.</b></h3>
+                    <h2><b>¡Hay un carrito que llenar!</b></h2>
+                    <h3>Actualmente no tenés productos en tu carrito.</h3>
                     <Link className="btnContinueShoplLink" to='/'>
                         <Button className="btnContinueShop" variant="contained" >
                             Buscar Prodcutos

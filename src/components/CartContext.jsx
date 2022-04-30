@@ -32,13 +32,19 @@ import { useState, createContext } from "react";
     }
 
     const deleteItem = (id) =>{
-        let result = cartList.filter(item => item.idItem != id);
+        let result = cartList.filter(item => item.idItem !== id);
         setCartList(result);
         
     }
 
+    const calcItemsQty = () => {
+        let qtys = cartList.map(item => item.qtyItem);
+        console.log(qtys)
+        return qtys.reduce(((previousValue, currentValue) => previousValue + currentValue), 0);
+    }
+
      return(
-        <CartContext.Provider value={{cartList, addToCart, removeCart, deleteItem}}>
+        <CartContext.Provider value={{cartList, addToCart, removeCart, deleteItem, calcItemsQty}}>
             {children}
         </CartContext.Provider>
 

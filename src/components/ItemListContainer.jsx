@@ -10,12 +10,12 @@ const ItemListContainer = () => {
     const {idCategoria} = useParams();
 
     useEffect(() => {
-        if (idCategoria == undefined){
+        if (idCategoria === undefined){
             customFetch(2000, data)
                 .then(result => setDatos(result))
                 .catch(err => console.log(err))
         } else {
-            customFetch(2000, data.filter(item => item.categoria === idCategoria))
+            customFetch(2000, data.filter(item => item.categoria === parseInt(idCategoria)))
                 .then(result => setDatos(result))
                 .catch(err => console.log(err))
         }
