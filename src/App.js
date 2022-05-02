@@ -10,19 +10,17 @@ import CartContainer from './components/CartContainer';
 
 function App() {
   return (
-    <div>
-      <CartContextProvider>
-        <BrowserRouter>
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<ItemListContainer />}/>
-            <Route path="/categoria/:idCategoria" element={<ItemListContainer />}/>
-            <Route path="/item/:idItem" element={<ItemDetailContainer />}/>
-            <Route path="cart" element={<CartContainer />}/>
-          </Routes>
-        </BrowserRouter>
-      </CartContextProvider>
-    </div>
+    <CartContextProvider>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />}/>
+          <Route path="/categoria/:idCategoria" element={<ItemListContainer />}/>
+          <Route path="/item/:idItem" element={<ItemDetailContainer />}/>
+          <Route path="cart" element={<CartContainer />}/>
+        </Routes>
+      </BrowserRouter>
+    </CartContextProvider>
   );
 }
 

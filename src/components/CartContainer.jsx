@@ -11,7 +11,7 @@ const CartContainer = () =>{
         <Container fluid>
             <Row>
                 <Col className="containerTitleCart">
-                    <h3>TU CARRITO</h3>
+                    <h2 className="titleCart">Tu Carrito</h2>
                 </Col>
             </Row>
             {

@@ -15,7 +15,7 @@ const ItemListContainer = () => {
                 .then(result => setDatos(result))
                 .catch(err => console.log(err))
         } else {
-            customFetch(2000, data.filter(item => item.categoria === parseInt(idCategoria)))
+            customFetch(2000, data.filter(item => item.categoria === idCategoria))
                 .then(result => setDatos(result))
                 .catch(err => console.log(err))
         }
