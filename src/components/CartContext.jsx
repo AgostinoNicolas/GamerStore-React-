@@ -37,6 +37,24 @@ import { useState, createContext } from "react";
         
     }
 
+    const calcTotalPerItem = (idItem) => {
+        let index = cartList.map(item => item.idItem).indexOf(idItem);
+        return cartList[index].costItem * cartList[index].qtyItem;
+    }
+
+    const calcSubTotal = () => {
+        let totalPerItem = cartList.map(item => calcTotalPerItem(item.idItem));
+        return totalPerItem.reduce((previousValue, currentValue) => previousValue + currentValue);
+    }
+
+    const calcTaxes = () => {
+        return calcSubTotal() * 21/100;
+    }
+
+    const calcTotal = () => {
+        return calcSubTotal()+calcTaxes();
+    }
+
     const calcItemsQty = () => {
         let qtys = cartList.map(item => item.qtyItem);
         console.log(qtys)
@@ -44,7 +62,7 @@ import { useState, createContext } from "react";
     }
 
      return(
-        <CartContext.Provider value={{cartList, addToCart, removeCart, deleteItem, calcItemsQty}}>
+        <CartContext.Provider value={{cartList, addToCart, removeCart, deleteItem, calcItemsQty, calcTotalPerItem, calcSubTotal, calcTaxes, calcTotal}}>
             {children}
         </CartContext.Provider>
 

@@ -173,6 +173,7 @@
 
 .itemDetailImg{
   height: 400px;
+  width: 100%;
 }
 
 .itemDetailDescription{
@@ -301,6 +302,11 @@
 .imgCart{
   width: 100px;
   height: 90px;
+}
+
+.containerprice p{
+  font-size: 12px !important;
+  margin-bottom: 5px !important;
 }
 
 

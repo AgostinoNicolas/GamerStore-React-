@@ -42,9 +42,9 @@ const Cart = () =>{
                                         <b>{item.nameItem}</b>
                                     </Col>
                                     <Col>
-                                        <div>
-                                            <p>2 item</p>
-                                            <p>Precio: ${item.costItem}</p>
+                                        <div className="containerprice">
+                                            <p>{item.qtyItem} item(s) / ${item.costItem} each</p>
+                                            <p>${test.calcTotalPerItem(item.idItem)}</p>
                                         </div>
                                     </Col>
                                     <Col>
