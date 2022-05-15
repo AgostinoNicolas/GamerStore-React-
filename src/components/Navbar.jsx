@@ -15,8 +15,8 @@ const NavBar = () =>{
                     <Navbar.Collapse id="basic-navbar-nav">            
                     <Nav className="me-auto">
                         <Link className='linkNav' to='/'>Productos</Link>
-                        <Link className='linkNav' to='categoria/1'>Notebook</Link>
-                        <Link className='linkNav' to='categoria/2'>Mouse</Link>
+                        <Link className='linkNav' to='categoria/notebook'>Notebook</Link>
+                        <Link className='linkNav' to='categoria/mouse'>Mouse</Link>
                     </Nav>
                     </Navbar.Collapse>
                     <Link to='cart'><CartWidget /></Link>    

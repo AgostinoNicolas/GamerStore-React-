@@ -106,7 +106,7 @@ const data = [
             nombre: "Razer Naga Trinity", 
             tipo:"Gamer", 
             precio:"139000",
-            desc: "El mouse de juego te ofrecerá la posibilidad de marcar la diferencia y sacar ventajas en tus partidas. Su conectividad y sensor suave ayudará a que te desplaces rápido por la pantalla. El sistema de detección de movimiento óptico te permitirá mover el cursor de una manera más precisa y sensible que en los sistemas tradicionales. Con sus 19 botones podrás tener mayor control e independencia para ejecutar. Navegá rápidamente por documentos y páginas web gracias su diseño ultra delgado, ergonómico, liviano y conveniente para llevar a donde quieras o viajar. ",  
+            desc: "El mouse de juego te ofrecerá la posibilidad de marcar la diferencia y sacar ventajas en tus partidas. Su conectividad y sensor suave ayudará a que te desplaces rápido por la pantalla. El sistema de detección de movimiento óptico te permitirá mover el cursor de una manera más precisa y sensible que en los sistemas tradicionales. Con sus 19 botones podrás tener mayor control e independencia para ejecutar. Navegá rápidamente por documentos y páginas web gracias su diseño ultra delgado, ergonómico, liviano y conveniente para llevar a donde quieras o viajar.",  
             img: "https://http2.mlstatic.com/D_NQ_NP_672897-MLA32146214449_092019-V.webp",
             stock: "10",
             categoria: "2",  

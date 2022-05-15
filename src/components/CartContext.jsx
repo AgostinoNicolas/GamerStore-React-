@@ -32,7 +32,8 @@ import { useState, createContext } from "react";
     }
 
     const deleteItem = (id) =>{
-        let result = cartList.filter(item => item.idItem !== id);
+        let result = cartList.filter(item => item.idItem != id);
+        /* console.log(result) */
         setCartList(result);
         
     }

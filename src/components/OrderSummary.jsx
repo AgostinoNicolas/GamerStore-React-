@@ -25,7 +25,7 @@ const OrderSummary = () =>{
                     <p>${test.calcTotal()}</p>
                 </div>
                 <div className="containerCheckoutNow">
-                    <Button className="checkoutNow" onClick={test.removeCart} variant="contained" color="secondary">
+                    <Button className="checkoutNow" onClick={checkoutNow} variant="contained" color="secondary">
                         Finalizar Compra
                     </Button>
                 </div>  
