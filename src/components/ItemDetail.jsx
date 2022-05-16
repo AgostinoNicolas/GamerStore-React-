@@ -3,6 +3,7 @@ import ItemCount from "./ItemCount";
 import Checkout from "./Checkout";
 import { CartContext } from "./CartContext";
 import { Container, Col, Row } from "react-bootstrap";
+import swal from "sweetalert";
 
 const ItemDetail = ({ items }) => {
     const [itemCount, setItemCount] = useState(0);
@@ -10,7 +11,10 @@ const ItemDetail = ({ items }) => {
  
 
     const onAdd = (qty) => {
-        alert("Has seleccionado " + qty + " articulos");
+        swal ( "Se agregaron " + qty + " articulos a Tu Carrito." , { 
+            button: false,
+            timer: "1500",
+          } ) ;
         setItemCount(qty);
         test.addToCart(items, qty);
     }
@@ -31,7 +35,7 @@ const ItemDetail = ({ items }) => {
                             <p><b>Almacenamiento:</b> {items.almacenamiento}</p>
                             <p><b>Pantalla:</b> {items.pantalla}</p>
                         </div>
-                        <b>Precio: ${items.precio}</b>
+                        <p className="detailPriceTotal">Precio: ${items.precio}</p>
                         <p className="stock">Stock: {items.stock}</p>        
                     </div>
                 </Col>

@@ -8,9 +8,16 @@ const CartWidget = () =>{
     const test = useContext(CartContext);
     return(
         <>
-            <Badge  className='shop-cart' badgeContent={test.calcItemsQty(0)} color="error">
-                <ShoppingCartIcon />
-            </Badge>
+            <div className='containerCartWidgetNav'>
+                <Badge  className='shop-cart' badgeContent={test.calcItemsQty(0)} color="error">
+                    <ShoppingCartIcon />
+                </Badge>
+                <div className='containerCartNav'>
+                    {
+                        test.cartList.length > 0 ? (<p>${test.calcTotal()}</p>) : (<p>$0</p>)
+                    }
+                </div>
+            </div>
         </>
     );
 }

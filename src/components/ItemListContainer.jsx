@@ -1,7 +1,5 @@
 import React from 'react';
-/* import customFetch from './utils/customFetch'; */
 import { useEffect, useState } from 'react';
-/* import data from './utils/data'; */
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
 import { firestoreFetch } from './utils/firestoreFetch';

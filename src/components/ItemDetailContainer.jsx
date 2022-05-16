@@ -4,8 +4,6 @@ import { useParams } from "react-router-dom";
 import ItemDetail from './ItemDetail';
 import { doc, getDoc } from "firebase/firestore";
 import db from '../components/utils/firebaseConfig';
-/* import customFetch from "./utils/customFetch";
-import data from "./utils/data"; */
 
 
 const ItemDetailContainer = () => {

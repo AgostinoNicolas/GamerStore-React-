@@ -42,15 +42,17 @@ const Cart = () =>{
                                         <b>{item.nameItem}</b>
                                     </Col>
                                     <Col>
-                                        <div className="containerprice">
+                                        <div className="containerPrice">
                                             <p>{item.qtyItem} item(s) / ${item.costItem} each</p>
-                                            <p>${test.calcTotalPerItem(item.idItem)}</p>
+                                            <p className="productsPrice">${test.calcTotalPerItem(item.idItem)}</p>
                                         </div>
                                     </Col>
                                     <Col>
-                                        <Button className="btnDeleteItem" onClick={()=> test.deleteItem(item.idItem)} variant="contained" color="secondary">
-                                            <DeleteForeverIcon className="DeleteForeverIcon" />
-                                        </Button>
+                                        <div className="containerBtnDeleteItem">
+                                            <Button className="btnDeleteItem" onClick={()=> test.deleteItem(item.idItem)} variant="contained" color="secondary">
+                                                <DeleteForeverIcon className="DeleteForeverIcon" />
+                                            </Button>
+                                        </div>        
                                     </Col>
                                 </Row>    
                             )

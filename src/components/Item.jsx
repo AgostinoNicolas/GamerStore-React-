@@ -1,4 +1,3 @@
-import ItemCount from "./ItemCount";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { Container, Col, Row } from "react-bootstrap";

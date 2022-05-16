@@ -10,8 +10,7 @@ const NavBar = () =>{
             <Navbar className='bg-nav' expand="lg">
                 <Container>
                     <Navbar.Brand className='logo'><Link className='linkNavLogo' to='/'>Gamer Store
-                    </Link></Navbar.Brand>
-                    
+                    </Link></Navbar.Brand>          
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">            
                     <Nav className='navProductos'>
@@ -20,8 +19,7 @@ const NavBar = () =>{
                         <Link className='linkNav' to='categoria/mouse'>Mouse</Link>
                         <Link className='linkCart' to='cart'><CartWidget /></Link>          
                     </Nav>   
-                    </Navbar.Collapse>
-                            
+                    </Navbar.Collapse>                       
                 </Container>
             </Navbar>
         </header>

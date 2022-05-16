@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# G A M E R  S T O R E  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_GAMER STORE es un E-commerce responsive que permite la compra de productos de computacion y accesorios. Esta basado en el framework React-Bootstrap 2.2.2, Material-ui/core 4.12.3, Material-ui/icons 4.11.2 y fue desarrollado con React Js, JavaScript, CSS3 y HTML5._
 
-## Available Scripts
+El proyecto se encuenta en desarrollo y cuenta con: 
+* Menu de Navegación: tres categorías navegables gracias a la implementacion de React Router Dom.
+* Vista de los Productos: vista general en "Productos" de todos los productos que cuenta la base de datos. 
+* Vista del Detalle del Producto: vista personalizada del producto seleccionado por el cliente, con su precio, stock y descripción. 
+* Vista del carrito de compras: si hay productos en el carrito, muestra el detalle del producto elegido, con su precio, la cantidad del mismo y el total. También hacia un lado, encotramos el resumen de la compra y un botón para finalizar la misma. Si no hay productos aparecerá, de manera condicional, un botón provisto por Material-ui/core donde nos enviará a la busqueda de productos. 
 
-In the project directory, you can run:
+### G A M E R  S T O R E en Acción 💻
 
-### `npm start`
+![]()
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Instalación 🔧
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+_1. Forkear y clonar el repositorio del proyecto_
 
-### `npm test`
+_2. Dentro de la carpeta raiz del proyecto, utiliza el siguiente comando_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm install 
+```
 
-### `npm run build`
+_De esta manera, ya tendrás instaladas todas las dependencias del proyecto_
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_3. Para correr el proyecto utiliza el siguiente comando_
+```
+npm start
+```
+_El proyecto estará disponible en http://localhost:3000._
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Construido con 🛠️
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+_Las herramientas utilizadas para el desarrollo del proyecto son las siguientes:_
 
-### `npm run eject`
+* [React Js](https://es.reactjs.org/) - La libreria de Js utilizada en el desarrollo
+* [React-Bootstrap](https://react-bootstrap.netlify.app/getting-started/introduction) - Framework front-end utilizado para desarrollar aplicaciones web y sitios mobile first
+* [NodeJs](https://nodejs.org/es/) - Manejador de dependencias
+* [Material-ui/icons](https://v4.mui.com/components/material-icons/#material-icons) - Framework de iconos vectoriales y estilos css
+* [Sweet Alert 2](https://sweetalert2.github.io/) - Libreria para crear ventanas emergentes personalizadas. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Wiki 📖
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/AgostinoNicolas/GamerStore-React-)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Autor ✒️
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+_El proyecto fue realizado por:_
 
-## Learn More
+* **Nicolás Agostino** - * GAMER STORE * - [AgostinoNicolas](https://github.com/AgostinoNicolas)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
