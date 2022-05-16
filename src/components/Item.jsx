@@ -25,14 +25,11 @@ const Item = ({id, img, nombre, procesador, memoria , almacenamiento, pantalla, 
                 </Col>
                 <Col>
                     <div className="productsBtnContainer">
-                        <div className="btnDetailContainer">
                         <Link className="btnDetailLink" to={`/item/${id}`}>
                             <Button className="btnDetail" variant="outlined" color="primary">
                                 Detalle
                             </Button>
                         </Link>
-                        </div>
-                        <ItemCount stock={stock} />      
                     </div>  
                 </Col>
             </Row>

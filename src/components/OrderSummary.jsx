@@ -51,20 +51,20 @@ const OrderSummary = () =>{
         <div className="containerOrderSummary">
             <div className="orderSummary">
                 <h3 className="titleOrderSummary">Resumen de pedido</h3>
-                <div>
-                    <p>Subtotal</p>
-                    <p>${test.calcSubTotal()}</p>
+                <div className="order">
+                    <p className="orderTotal">Subtotal</p>
+                    <p className="orderPrecio">${test.calcSubTotal()}</p>
                 </div>
-                <div>
-                    <p>IVA 21%</p>
-                    <p>${test.calcTaxes()}</p>
+                <div className="order">
+                    <p className="orderTotal">IVA 21%</p>
+                    <p className="orderPrecio">${test.calcTaxes()}</p>
                 </div>
-                <div>
-                    <p>Descuento</p>
+                <div className="order">
+                    <p className="orderTotal">Descuento</p>
                 </div>
-                <div>
-                    <p>Total</p>
-                    <p>${test.calcTotal()}</p>
+                <div className="order">
+                    <p className="orderTotal">Total</p>
+                    <p className="orderPrecioTotal">${test.calcTotal()}</p>
                 </div>
                 <div className="containerCheckoutNow">
                     <Button className="checkoutNow" onClick={createOrder} variant="contained" color="secondary">

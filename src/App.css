@@ -3,19 +3,56 @@
   margin: 0%;
 }
 
+.linkCart{
+  display: flex;
+  justify-content: end;
+  width: 300px;
+  margin-left: 10px;
+}
+
+
+
+@font-face{
+  font-family: 'mulish-light';
+  src: url(./assets/font/Mulish-Light.ttf);
+}
+
+@font-face{
+  font-family: 'mulish-regular';
+  src: url(./assets/font/Mulish-Regular.ttf);
+}
+
+@font-face{
+  font-family: 'mulish-medium';
+  src: url(./assets/font/Mulish-Medium.ttf);
+}
+
+@font-face{
+  font-family: 'mulish-extraBold';
+  src: url(./assets/font/Mulish-ExtraBold.ttf);
+}
+
+body{
+  font-family: 'mulish-regular' !important;
+}
 
 /* NAVBAR */
 .bg-nav{
-  background: #4361ee;
+  background: rgba(51, 51, 51, 1);
+}
+
+#basic-navbar-nav{
+  justify-content: center !important;
 }
 
 .linkNav{
   text-decoration: none !important;
   color: azure;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   margin-left: 10px;
   margin-right: 10px;
+  font-family: 'mulish-regular' !important;
 }
 
 .linkNav:hover{
@@ -23,9 +60,10 @@
 }
 
 .logo{
+  font-family: 'mulish-extraBold';
   color: azure !important;
   padding: 10px;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -41,6 +79,10 @@
   color:azure !important;
 }
 
+.MuiSvgIcon-root{
+  font-size: 18px !important;
+}
+
 
 /* PRODUCTS CONTAINER */
 .containerProducts{
@@ -49,7 +91,8 @@
 }
 
 .productsTitle{
-  font-size: 22px;
+  font-size: 18px;
+  font-family: 'mulish-medium' !important;
 }
 
 .productsImg{
@@ -62,15 +105,18 @@
   font-size: 11px !important;
 }
 .productsPrice{
-  font-weight: 700;
+  font-weight: 600;
   font-size: 13px;
   margin-top: 5px !important;
   margin-bottom: 5px !important;
+  color: #ff006e;
 
 }
 .productsBtnContainer{
   display: flex;
-  flex-direction: column;
+  height: 100% ;
+  align-items: center;
+  justify-content: center;
   padding-top: 15px;
 }
 
@@ -110,7 +156,7 @@
 .btnAddToCart{
   background-color: #4361ee !important;
   color: azure !important;
-  font-size: 0.675rem !important;
+  font-size: 0.580rem !important;
   width: 160px !important;
 }
 
@@ -127,17 +173,17 @@
 }
 
 .btnDetail{
-  background-color: #9c27b0 !important;
-  border: #9c27b0 !important;
+  background-color: #4361ee !important;
+  border: #4361ee !important;
   margin-bottom: 20px !important;
   color: azure !important;
-  font-size: 0.675rem !important;
+  font-size: 0.580rem !important;
   width: 160px !important;
 }
 
 .btnDetail:hover{
-  background-color: #882599 !important;
-  border: #882599 !important;
+  background-color: #3b53c0 !important;
+  border: #3b53c0 !important;
 }
 
 .btnDetailLink{
@@ -151,7 +197,7 @@
   border: #ff006e !important;
   color: azure !important;
   width: 160px;
-  font-size: 0.675rem !important;
+  font-size: 0.580rem !important;
 }
 
 .btnCheckout:hover{
@@ -162,7 +208,7 @@
 .btnCheckoutLink{
   text-decoration: none;
   color: azure !important;
-  font-size: 0.875rem !important;
+  font-size: 0.580rem !important;
 }
 
 
@@ -229,6 +275,7 @@
 .titleCart{
   text-transform: uppercase;
   font-weight: bold;
+  font-family: 'mulish-extraBold' !important;
 
 }
 
@@ -255,7 +302,7 @@
   background-color: #4361ee !important;
   border: #3b53c0 !important;
   color: azure !important;
-  font-size: 0.675rem !important;
+  font-size: 0.580rem !important;
   width: 180px;
 }
 
@@ -264,13 +311,12 @@
   border: #3b53c0 !important;
 }
 
-
 /* BTN EMPTY CART */
 .emptyCart{
   background-color: #4361ee !important;
   border: #3b53c0 !important;
   color: azure !important;
-  font-size: 0.675rem !important;
+  font-size: 0.580rem !important;
   width: 180px;
 }
 
@@ -294,9 +340,12 @@
 }
 
 .itemCart{
+  width: 80%;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  border-bottom: 1px solid #dee2e6;
 }
 
 .imgCart{
@@ -327,6 +376,20 @@
   font-size: 16px !important;
 }
 
+/* BTN SEARCH PRODUCTS */
+.btnSearchProducts{
+  background-color: #ff006e !important;
+  border: #ff006e !important;
+  color: azure !important;
+  font-size: 0.675rem !important;
+  width: 180px;
+}
+
+.btnSearchProducts:hover{
+  background-color: #d1015b !important;
+  border: #d1015b !important;
+}
+
 
 /* ORDER SUMMAY */
 .containerOrderSummary{
@@ -341,8 +404,23 @@
 
 .titleOrderSummary{
   text-transform: uppercase;
-  font-size: 18px !important;
+  font-family: 'mulish-extraBold' !important;
+  font-size: 16px !important;
   margin-bottom: 20px;
+}
+
+.order{
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderTotal{
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.orderPrecio{
+  font-size: 12px;
 }
 
 
