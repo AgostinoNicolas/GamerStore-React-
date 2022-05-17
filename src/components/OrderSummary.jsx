@@ -1,6 +1,7 @@
 import { Button } from "@material-ui/core";
 import { serverTimestamp, doc, collection, setDoc, increment, updateDoc } from "firebase/firestore";
 import { useContext } from "react";
+import swal from "sweetalert";
 import { CartContext } from "./CartContext";
 import db from "./utils/firebaseConfig";
 
@@ -40,7 +41,7 @@ const OrderSummary = () =>{
     }
         
     createOrderInFirestore()
-        .then(result => alert('Su pedido ha sido creado. Tome nota del ID de su pedido.\n\n\nID del pedido:' + result.id + '\n\n'))
+        .then(result => swal('Su pedido ha sido creado. Tome nota del ID de su pedido.\n\n\nID del pedido: ' + result.id + '\n\n'))
         .catch(err => console.log(err));
         
     test.removeCart();

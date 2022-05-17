@@ -1,6 +1,6 @@
 import React from 'react';
 import { Badge } from "@material-ui/core";
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import LocalMallIcon from '@material-ui/icons/LocalMall';
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 
@@ -9,8 +9,8 @@ const CartWidget = () =>{
     return(
         <>
             <div className='containerCartWidgetNav'>
-                <Badge  className='shop-cart' badgeContent={test.calcItemsQty(0)} color="error">
-                    <ShoppingCartIcon />
+                <Badge  className='shopCart' badgeContent={test.calcItemsQty(0)} color="error">
+                    <LocalMallIcon />
                 </Badge>
                 <div className='containerCartNav'>
                     {
