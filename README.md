@@ -8,10 +8,6 @@ El proyecto se encuenta en desarrollo y cuenta con:
 * Vista del Detalle del Producto: vista personalizada del producto seleccionado por el cliente, con su precio, stock y descripción. 
 * Vista del carrito de compras: si hay productos en el carrito, muestra el detalle del producto elegido, con su precio, la cantidad del mismo y el total. También hacia un lado, encotramos el resumen de la compra y un botón para finalizar la misma. Si no hay productos aparecerá, de manera condicional, un botón provisto por Material-ui/core donde nos enviará a la busqueda de productos. 
 
-### G A M E R  S T O R E en Acción 💻
-
-![]()
-
 ### Instalación 🔧
 
 _1. Forkear y clonar el repositorio del proyecto_
